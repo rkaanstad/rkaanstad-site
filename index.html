@@ -52,7 +52,7 @@ nav a:hover{border-color:var(--brand);color:var(--brand-deep)}
 .hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(1.8rem,4vw,3rem);line-height:1.2;margin:1rem auto 1.2rem;max-width:28ch}
 .hero .lede{font-size:clamp(1.08rem,1.6vw,1.25rem);color:var(--ink);max-width:62ch;margin:0 auto 2.2rem}
 .fleuron{color:var(--brand);font-size:1.8rem;margin-bottom:1rem}
-.btn{display:inline-block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:.95rem 1.7rem;border:1px solid var(--brand);transition:background .25s,color .25s,transform .2s; cursor: pointer;}
+.btn{display:inline-block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:.95rem 1.7rem;border:1px solid var(--brand);transition:background .25s,color .25s,transform .2s;cursor:pointer}
 .btn-solid{background:var(--brand);color:var(--parchment)}
 .btn-solid:hover{background:var(--brand-deep);color:#fff;transform:translateY(-2px)}
 .btn-ghost:hover{background:var(--brand);color:var(--parchment);transform:translateY(-2px)}
@@ -104,7 +104,7 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,4vw,3rem);line-
 .about figcaption{font-size:.8rem;letter-spacing:.12em;color:var(--brand);margin-top:.8rem;font-style:italic}
 .about p{margin-bottom:1rem;max-width:60ch}
 .facts{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:1.6rem;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);font-weight:600}
-.facts span::before{content:" ";}
+.facts span::before{content:"❦ ";}
 @media(max-width:760px){.about{grid-template-columns:1fr}.about figure{max-width:240px}}
 
 /* lightbox */
@@ -177,7 +177,7 @@ footer a:hover{color:#e8c48a}
       <a href="#about">About</a>
       <a href="#media">Media Kit</a>
       <a href="#contact">Contact</a>
-      <a class="nav-cta" href="https://www.youtube.com/@Shakespeareandfriends" target="_blank" rel="noopener">Listen </a>
+      <a class="nav-cta" href="https://www.youtube.com/@Shakespeareandfriends" target="_blank" rel="noopener">Listen ↗</a>
     </nav>
   </div>
 </header>
@@ -192,7 +192,7 @@ footer a:hover{color:#e8c48a}
   <!-- HERO -->
   <section class="hero container">
     <p class="eyebrow rv">Writer · Illustrator · Historian</p>
-    <div class="fleuron rv" aria-hidden="true"></div>
+    <div class="fleuron rv" aria-hidden="true">❦</div>
     <h1 class="rv">Tracing the sources: from Shakespeare's influences to the silver that shaped history.</h1>
     <p class="lede rv">Writer, illustrator, and historian R. K. Aanstad explores the hidden foundations of our greatest stories and the tangible forces that built our world, from the classical myths and Renaissance rivalries that fueled the Bard, to the precious metal that funded empires and microchips alike.</p>
     <div class="btns rv">
@@ -375,13 +375,13 @@ footer a:hover{color:#e8c48a}
     <h2 class="rv">Get in touch</h2>
     <p class="rv">Questions about the books, interview requests, or a Shakespeare hot take you need to share? Write any time. For press and interviews, the media kit above has everything a host needs.</p>
     
-    <!-- CONTACT FORM (using FormSubmit) -->
-    <form class="contact-form rv" action="https://formsubmit.co/hello@rkaanstad.com" method="POST">
-      
-      <!-- FormSubmit hidden settings -->
-      <input type="hidden" name="_subject" value="New message from rkaanstad.com!">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+    <!-- CONTACT FORM (Web3Forms - key embedded) -->
+    <form class="contact-form rv" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="81533d65-246e-4859-bb50-bd5c2a11a845">
+      <input type="hidden" name="subject" value="New message from rkaanstad.com!">
+      <input type="hidden" name="from_name" value="Website contact form">
+      <!-- Hidden spam trap (invisible to humans) -->
+      <input type="text" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
       <div class="form-group">
         <label for="name">Name</label>
