@@ -148,8 +148,6 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,4vw,3rem);line-
 .form-group input,.form-group textarea{width:100%;padding:.75rem .9rem;border:1px solid var(--line);background:var(--card);font-family:var(--sans);font-size:1rem;color:var(--ink);transition:border-color .2s,box-shadow .2s}
 .form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(113,31,43,.12)}
 .form-group textarea{resize:vertical;min-height:140px}
-.form-note{margin-top:1.2rem;font-size:.9rem;text-align:center}
-.form-note a{color:var(--brand);border-bottom:1px solid var(--brand)}
 @media(max-width:640px){.contact-form{margin:2rem auto 0}}
 
 footer{background:#261014;color:rgba(247,240,227,.85);padding:2.5rem 0;font-size:.85rem}
@@ -310,7 +308,7 @@ footer a:hover{color:#e8c48a}
     <div class="container">
       <p class="sec-label rv">For journalists, hosts &amp; publicists</p>
       <h2 class="rv">Media Kit &amp; Press</h2>
-      <p class="media-intro rv">Everything you need to book, introduce, and credit R. K. Aanstad: bios, images, and interview topics in one place. For booking, email <a href="mailto:hello@rkaanstad.com">hello@rkaanstad.com</a>; replies within two business days.</p>
+      <p class="media-intro rv">Everything you need to book, introduce, and credit R. K. Aanstad: bios, images, and interview topics in one place. For booking inquiries, please use the contact form at the bottom of the page.</p>
 
       <div class="downloads rv">
         <div class="dl"><h4>Author photo</h4><p>High resolution, print ready</p><a class="btn btn-ghost btn-small" href="images/author-photo.jpg" download="RK-Aanstad-headshot.jpg">Download</a></div>
@@ -375,7 +373,7 @@ footer a:hover{color:#e8c48a}
     <h2 class="rv">Get in touch</h2>
     <p class="rv">Questions about the books, interview requests, or a Shakespeare hot take you need to share? Write any time. For press and interviews, the media kit above has everything a host needs.</p>
     
-    <!-- CONTACT FORM (Web3Forms - key embedded) -->
+    <!-- CONTACT FORM (Web3Forms) -->
     <form class="contact-form rv" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="81533d65-246e-4859-bb50-bd5c2a11a845">
       <input type="hidden" name="subject" value="New message from rkaanstad.com!">
@@ -396,7 +394,6 @@ footer a:hover{color:#e8c48a}
         <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
       </div>
       <button type="submit" class="btn btn-solid">Send message</button>
-      <p class="form-note">Or email directly: <a href="mailto:hello@rkaanstad.com">hello@rkaanstad.com</a></p>
     </form>
   </section>
 
