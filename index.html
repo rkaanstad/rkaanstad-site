@@ -136,6 +136,11 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,4vw,3rem);line-
 .appearances li{list-style:none;padding:.6rem 0;border-bottom:1px dotted var(--line)}
 .appearances a{text-decoration:none;border-bottom:1px solid var(--brand)}
 .appearances a:hover{color:var(--brand-deep)}
+.episode-list{margin:.8rem 0 1.2rem 1.4rem;padding-left:0;list-style:none;border-left:2px solid var(--line)}
+.episode-list li{padding:.4rem 0 .4rem 1rem;border-bottom:none;position:relative}
+.episode-list li::before{content:"→";position:absolute;left:0;color:var(--brand);font-size:.7rem}
+.episode-list a{font-size:.95rem;text-decoration:none;border-bottom:1px solid var(--brand)}
+.episode-list a:hover{color:var(--brand-deep)}
 
 /* contact + footer */
 .contact{text-align:center}
@@ -354,14 +359,37 @@ footer a:hover{color:#e8c48a}
 
       <p class="hostline rv">Suggested host intro: "My guest today is a writer, illustrator, and historian who co-hosts the podcast Shakespeare and Friends…"</p>
 
+      <!-- APPEARANCES -->
       <div class="rv">
-        <h4 style="font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--brand);font-weight:600;margin-bottom:.8rem">Appearances &amp; links</h4>
+        <h4 style="font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--brand);font-weight:600;margin-bottom:.8rem">Appearances</h4>
         <ul class="appearances">
-          <li><a href="https://www.youtube.com/@Shakespeareandfriends" target="_blank" rel="noopener">Shakespeare and Friends</a>: co-host with Darren Freebury-Jones</li>
-          <li>That Shakespeare Life: guest</li>
-          <li>The History of European Theatre: guest</li>
+          <li><strong>Shakespeare and Friends:</strong> co-host with Darren Freebury-Jones</li>
+          
+          <li style="margin-top:1rem"><strong>That Shakespeare Life:</strong> guest
+            <ul class="episode-list">
+              <li><a href="https://www.cassidycash.com/twelfth-night-celebrations/" target="_blank" rel="noopener">Twelfth Night Celebrations</a></li>
+              <li><a href="https://www.cassidycash.com/the-moon-with-rachel-aanstad-ep-209/" target="_blank" rel="noopener">The Moon with Rachel Aanstad (Ep. 209)</a></li>
+            </ul>
+          </li>
+          
+          <li style="margin-top:1rem"><strong>The History of European Theatre:</strong> guest
+            <ul class="episode-list">
+              <li><a href="https://www.thehistoryofeuropeantheatre.com/a-bawdy-twelfth-night-a-conversation-with-rachel-aanstad/" target="_blank" rel="noopener">A Bawdy Twelfth Night: A Conversation with Rachel Aanstad</a></li>
+              <li><a href="https://www.thehistoryofeuropeantheatre.com/a-midsummer-nights-dream-a-conversation-with-rachel-aanstad/" target="_blank" rel="noopener">A Midsummer Night's Dream: A Conversation with Rachel Aanstad</a></li>
+              <li><a href="https://www.thehistoryofeuropeantheatre.com/why-did-shakespeare-write-troilus-and-cressida-a-conversation-with-rachel-aanstad/" target="_blank" rel="noopener">Why Did Shakespeare Write Troilus and Cressida? A Conversation with Rachel Aanstad</a></li>
+              <li><a href="https://www.thehistoryofeuropeantheatre.com/a-midsummer-nights-dream-man-is-but-an-ass-if-he-go-about-to-expound-this-dream/" target="_blank" rel="noopener">A Midsummer Night's Dream: "Man is but an ass if he go about to expound this dream"</a></li>
+              <li><a href="https://www.thehistoryofeuropeantheatre.com/twelfth-night-foolery-sir-does-walk-about-the-orb-like-the-sun-it-shines-everywhere/" target="_blank" rel="noopener">Twelfth Night: "Foolery, sir, does walk about the orb like the sun, it shines everywhere"</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- LINKS -->
+      <div class="rv" style="margin-top:3rem">
+        <h4 style="font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--brand);font-weight:600;margin-bottom:.8rem">Links</h4>
+        <ul class="appearances">
           <li><a href="https://www.penandswordbooks.com/author/rachel-aanstad/" target="_blank" rel="noopener">Pen &amp; Sword Books author page</a></li>
-          <li><a href="https://www.facebook.com/profile.php?id=61558750563914" target="_blank" rel="noopener">Facebook author page</a></li>
+          <li><a href="https://www.facebook.com/groups/3527383130776887" target="_blank" rel="noopener">Facebook author page</a></li>
         </ul>
       </div>
     </div>
